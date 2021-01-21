@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+    <TITLE>Homepage</TITLE></HEAD>
+
+<BODY>
+<H1 ALIGN="center"><FONT COLOR="black">Homepage</FONT></H1>
+<HR>
+<P></P>
+<P></P>
+<FORM action="" METHOD="get" ENCTYPE="text/plain" NAME="Feedback">
+    <TABLE BORDER="0">
+        <TR>
+            <TD>Vorname</TD>
+            <TD ALIGN="LEFT"><INPUT TYPE="TEXT" NAME="vorname" onBlur="check_VORNAME ()"></TD></TR>
+        <TR>
+            <TD>Nachname</TD>
+            <TD><INPUT TYPE="TEXT" NAME="nachname" ></TD></TR>
+        <TR>
+            <TD>Stra&szlig;e</TD>
+            <TD><INPUT TYPE="TEXT" NAME="strasse"></TD></TR>
+        <TR>
+            <TD>Postleitzahl</TD>
+            <TD><INPUT TYPE="TEXT" NAME="plz" onBlur="check_PLZ ()"></TD></TR>
+        <TR>
+            <TD>Ort</TD>
+            <TD><INPUT TYPE="TEXT" NAME="ort"></TD></TR>
+        <TR>
+            <TD>Telefon</TD>
+            <TD><INPUT TYPE="TEXT" NAME="fon"></TD></TR>
+        <TR>
+            <TD>Telefax</TD>
+            <TD><INPUT TYPE="TEXT" NAME="fax"></TD></TR>
+        <TR>
+            <TD>E-Mail</TD>
+            <TD><INPUT TYPE="TEXT" NAME="mail"></TD></TR>
+        <TR>
+            <TD>Welchen Newsletter m&ouml;chten Sie abonnieren?</TD>
+            <TD><INPUT TYPE="CHECKBOX" NAME="Checkbox1">T&auml;glich
+                <INPUT TYPE="CHECKBOX" NAME="Checkbox2">W&ouml;chentlich
+                <INPUT TYPE="CHECKBOX" NAME="Checkbox3">Monatlich</TD></TR>
+        <TR>
+            <TD>Was f&uuml;r ein HTML-Kenner bist Du??</TD>
+            <TD><INPUT value="Anfaenger" TYPE="RADIO" NAME="Radio1">Anf&auml;nger
+                <INPUT value="Fort" TYPE="RADIO" NAME="Radio1" >Fortgeschritten
+                <INPUT value="Voll" TYPE="RADIO" NAME="Radio1">Vollprofi</TD></TR>
+    </TABLE>
+    <INPUT TYPE="SUBMIT" VALUE="Abschicken" onclick="return check()">
+    <INPUT TYPE="RESET" VALUE="L&ouml;schen">
+</FORM>
+<P></P>
+
+
+
+<P></P>
+<HR></BODY></HTML>
