@@ -1,6 +1,8 @@
 <HTML>
 <HEAD>
-    <TITLE>Homepage</TITLE></HEAD>
+    <TITLE>Homepage</TITLE>
+    <script src="_public/src/js/check_form_boxes.js"></script>
+</HEAD>
 
 <BODY>
 <H1 ALIGN="center"><FONT COLOR="black">Homepage</FONT></H1>
@@ -11,7 +13,7 @@
     <TABLE BORDER="0">
         <TR>
             <TD>Vorname</TD>
-            <TD ALIGN="LEFT"><INPUT TYPE="TEXT" NAME="vorname" onBlur="check_VORNAME ()"></TD></TR>
+            <TD ALIGN="LEFT"><INPUT id="input_vorname" TYPE="TEXT" NAME="vorname" onBlur="check_vorname()"></TD></TR>
         <TR>
             <TD>Nachname</TD>
             <TD><INPUT TYPE="TEXT" NAME="nachname" ></TD></TR>
@@ -20,7 +22,7 @@
             <TD><INPUT TYPE="TEXT" NAME="strasse"></TD></TR>
         <TR>
             <TD>Postleitzahl</TD>
-            <TD><INPUT TYPE="TEXT" NAME="plz" onBlur="check_PLZ ()"></TD></TR>
+            <TD><INPUT TYPE="TEXT" id="input_plz" NAME="plz" onBlur="check_plz()"></TD></TR>
         <TR>
             <TD>Ort</TD>
             <TD><INPUT TYPE="TEXT" NAME="ort"></TD></TR>
@@ -32,7 +34,7 @@
             <TD><INPUT TYPE="TEXT" NAME="fax"></TD></TR>
         <TR>
             <TD>E-Mail</TD>
-            <TD><INPUT TYPE="TEXT" NAME="mail"></TD></TR>
+            <TD><INPUT TYPE="TEXT" id="input_mail" NAME="mail" onBlur="check_mail()"></TD></TR>
         <TR>
             <TD>Welchen Newsletter m&ouml;chten Sie abonnieren?</TD>
             <TD><INPUT TYPE="CHECKBOX" NAME="Checkbox1">T&auml;glich
@@ -44,7 +46,7 @@
                 <INPUT value="Fort" TYPE="RADIO" NAME="Radio1" >Fortgeschritten
                 <INPUT value="Voll" TYPE="RADIO" NAME="Radio1">Vollprofi</TD></TR>
     </TABLE>
-    <INPUT TYPE="SUBMIT" VALUE="Abschicken" onclick="return check()">
+    <INPUT TYPE="SUBMIT" VALUE="Abschicken" onClick="return check_submit()">
     <INPUT TYPE="RESET" VALUE="L&ouml;schen">
 </FORM>
 <P></P>
